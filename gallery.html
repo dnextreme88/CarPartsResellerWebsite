@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+	<link rel="stylesheet" href="main.css" type="text/css"> 
+	<link rel="shortcut icon" href="http://i57.tinypic.com/2hwg2gg.png" />
+	<style>
+		body {
+			font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			margin: 3%;
+			margin-bottom: 0;
+			font-size: 13px;
+		}
+		/* thumbnail section */
+		#thumbnailDiv {
+			background-color: green;
+		}
+		ul#thumbnails {
+			  list-style-type: none; 
+		}
+		ul#thumbnails li {
+			  display: inline; 
+		}
+		ul#thumbnails li img{
+			  width: 120px;
+			  height: 120px;
+			  margin-left: -16px; /* overlaps them */
+			  margin-bottom: 32px; /* adds a small amount of space to easily separate pics to another section */
+		}
+		ul#thumbnails li:nth-child(odd) img{
+			  border: 3px solid purple;
+			  transform: rotate(-15deg);
+			  transition: all 0.5s ease-out;
+		}
+		ul#thumbnails li:nth-child(even) img{
+			  border: 3px solid violet;
+			  transform: rotate(15deg);
+			  transition: all 0.6s ease;
+		}
+			/* image hovers */
+			ul#thumbnails li:nth-child(odd) img:hover{
+				  width: 320px;
+				  height: 320px;
+				  border: 3px solid blue;
+				  transform: rotate(5deg);
+			}
+			ul#thumbnails li:nth-child(even) img:hover{
+				  width: 320px;
+				  height: 320px;
+				  border: 3px solid blue;
+				  transform: rotate(-5deg);
+			}
+			/* end image hovers */
+		/* end thumbnail section */
+	</style>
+</head>
+
+<body>
+	<a href="home.html" title="Go to home"><img src="logo.png" /></a>
+	<img src="banner.png" />
+	<!-- NAVIGATION BAR / HEADERS -->
+		<div id="nav">
+			<ul id="menu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li>Car List
+					<ul class="dropdown">
+						<li><a href="#.html">Bugatti</a></li>
+						<li><a href="#.html">Lamborghini</a></li>
+					</ul>
+				</li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li id="itemSelected"><a href="gallery.html" id="itemSelected">Gallery</a></li>
+		  </ul>
+		</div>
+	<!-- end NAVIGATION BAR / HEADERS -->
+	<!-- MAIN CONTENT / BODY -->
+		<div id="main">
+			<div id="thumbnailDiv">
+			<p>Some pictures. A big thank you! :D Wanna be featured? Then head over and start requiring our services!</p>
+				<ul>
+					<li>Customers
+						<ul id="thumbnails">
+						  <li><img src="gallery\pic1.jpg" /></li>
+						  <li><img src="gallery\pic2.jpg" /></li>
+						  <li><img src="gallery\pic3.jpg" /></li>
+						  <li><img src="gallery\pic4.jpg" /></li>
+						  <li><img src="gallery\pic5.jpg" /></li>
+						  <li><img src="gallery\pic6.jpg" /></li>
+						  <li><img src="gallery\pic7.jpg" /></li>
+						  <li><img src="gallery\pic8.jpg" /></li>
+						</ul>
+					</li>
+					<li>Bugatti
+						<ul id="thumbnails">
+						  <li><img src="gallery\bugatti1.jpg" /></li>
+						  <li><img src="gallery\bugatti2.jpg" /></li>
+						  <li><img src="gallery\bugatti3.jpg" /></li>
+						  <li><img src="gallery\bugatti4.jpg" /></li>
+						  <li><img src="gallery\bugatti5.jpg" /></li>
+						  <li><img src="gallery\bugatti6.jpg" /></li>
+						  <li><img src="gallery\bugatti7.jpg" /></li>
+						  <li><img src="gallery\bugatti8.jpg" /></li>
+						</ul>
+					</li>
+					<li>Lamborghini
+						<ul id="thumbnails">
+						  <li><img src="gallery\lamborghini1.jpg" /></li>
+						  <li><img src="gallery\lamborghini2.jpg" /></li>
+						  <li><img src="gallery\lamborghini3.jpg" /></li>
+						  <li><img src="gallery\lamborghini4.jpg" /></li>
+						  <li><img src="gallery\lamborghini5.jpg" /></li>
+						  <li><img src="gallery\lamborghini6.jpg" /></li>
+						  <li><img src="gallery\lamborghini7.jpg" /></li>
+						  <li><img src="gallery\lamborghini8.jpg" /></li>
+						</ul>
+					</li>
+					<li>Lamborghini
+						<ul id="thumbnails">
+						  <li><img src="gallery\lotus1.jpg" /></li>
+						  <li><img src="gallery\lotus2.jpg" /></li>
+						</ul>
+					</li>
+			</div>
+		</div>
+	<!-- end MAIN CONTENT / BODY -->
+	<!-- FOOTERS -->
+		<div id="footer">
+			<ul id="menu">
+				<li><a href="about.html">About</a></li>
+				<li><a href="archive.html">Archive</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			<p>Reach us! <span><a href="http://www.instagram.com"><img src="http://i58.tinypic.com/20z7aq0.png" width="16" height="16" /></a> | <a href="http://www.facebook.com"><img src="http://i58.tinypic.com/n507lu.png" width="16" height="16" /></a> | <a href="http://www.twitter.com"><img src="http://i60.tinypic.com/2duf70h.png" width="16" height="16" /></a></span></p>
+			<p>Copyright &#169; 2015</p>
+			<p>All rights reserved.</p>
+			<p>Per DTI-NCR Permit No. 07312015, Series of 2015.</p>
+		</div>
+	<!-- end FOOTERS -->
+</body>
+</html>
